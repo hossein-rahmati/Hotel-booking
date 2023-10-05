@@ -12,12 +12,10 @@
   max-width: 900px;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
   border: 1px solid #ebe9e9;
   border-radius: 1.5rem;
   padding: 1rem;
 }
-
 .headerSearchInput {
   padding: 0.7rem 0.5rem;
   font-size: 1rem;
@@ -26,6 +24,9 @@
   display: flex;
   align-items: center;
   position: relative;
+}
+.headerSearchItem:nth-of-type(3) {
+  cursor: pointer;
 }
 .headerSearchItem .seperator {
   display: inline-block;
@@ -113,6 +114,11 @@
   color: #fff;
   padding: 0.6rem;
   border-radius: 1rem;
+  transition: all ease 200ms;
+}
+
+.headerSearchBtn:hover {
+  opacity: 0.8;
 }
 
 /*  location list */

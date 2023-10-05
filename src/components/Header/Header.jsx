@@ -1,6 +1,7 @@
 import { MdLocationOn } from "react-icons/md";
 import { HiCalendar, HiMinus, HiPlus, HiSearch } from "react-icons/hi";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import useOutsideClick from "../../hooks/useOutsideClick";
 
 function Header() {
   const [destination, setDestination] = useState("");
@@ -34,14 +35,14 @@ function Header() {
             name="destination"
             id="destination"
           />
-          <span className="seperator"></span>
         </div>
         <div className="headerSearchItem">
+          <span className="seperator"></span>
           <HiCalendar className="headerIcon dateIcon" />
           <div className="dateDropDown">2023/10/2</div>
-          <span className="seperator"></span>
         </div>
         <div className="headerSearchItem">
+          <span className="seperator"></span>
           <div
             id="optionDropDown"
             onClick={() => setOpenOptions((prevstate) => !prevstate)}
@@ -51,11 +52,15 @@ function Header() {
             room
           </div>
           {openOptions && (
-            <GuestOptionList options={options} handleOptions={handleOptions} />
+            <GuestOptionList
+              setOpenOptions={setOpenOptions}
+              options={options}
+              handleOptions={handleOptions}
+            />
           )}
-          <span className="seperator"></span>
         </div>
         <div className="headerSearchItem">
+          <span className="seperator"></span>
           <button className="headerSearchBtn">
             <HiSearch className="headerIcon" />
           </button>
@@ -67,9 +72,11 @@ function Header() {
 
 export default Header;
 
-function GuestOptionList({ options, handleOptions }) {
+function GuestOptionList({ options, handleOptions, setOpenOptions }) {
+  const optionRef = useRef();
+  useOutsideClick(optionRef, "optionDropDown", () => setOpenOptions(false));
   return (
-    <div className="guestOptions">
+    <div ref={optionRef} className="guestOptions">
       <OptionItem
         handleOptions={handleOptions}
         type="adult"
