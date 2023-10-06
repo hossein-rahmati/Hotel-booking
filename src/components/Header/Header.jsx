@@ -77,8 +77,7 @@ function Header() {
             onClick={() => setOpenOptions((prevstate) => !prevstate)}
           >
             {options.adult} adult &bull; {options.children} children &bull;{" "}
-            {options.room}
-            room
+            {options.room} room
           </div>
           {openOptions && (
             <GuestOptionList
