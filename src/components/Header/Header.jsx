@@ -40,7 +40,7 @@ function Header() {
       destination,
       options: JSON.stringify(options),
     });
-    // setSearchPaqrams(encodedParams);
+    // setSearchPaqrams(encodedParams); //for updating search params
     navigate({
       pathname: "/hotels",
       search: encodedParams.toString(),
