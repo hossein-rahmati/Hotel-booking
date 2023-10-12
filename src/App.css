@@ -224,6 +224,7 @@
 .searchList .searchItem {
   display: flex;
   gap: 1rem;
+  cursor: pointer;
 }
 .searchList .searchItem img {
   width: 6rem;
