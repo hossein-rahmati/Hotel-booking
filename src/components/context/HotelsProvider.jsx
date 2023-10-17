@@ -1,11 +1,11 @@
 import { createContext, useContext } from "react";
 import { useSearchParams } from "react-router-dom";
-import useFetch from "../hooks/useFetch";
+import useFetch from "../../hooks/useFetch";
 
 const HotelsContext = createContext();
 
-export default function HotelsProvider({ chidlren }) {
-  const [searchParams] = useSearchParams();
+export default function HotelsProvider({ children }) {
+  const [searchParams, setSearchParams] = useSearchParams();
   const destination = searchParams.get("destination");
   const room = JSON.parse(searchParams.get("options"))?.room;
   const { isLoading, data: hotels } = useFetch(
@@ -15,7 +15,7 @@ export default function HotelsProvider({ chidlren }) {
 
   return (
     <HotelsContext.Provider value={{ isLoading, hotels }}>
-      {chidlren}
+      {children}
     </HotelsContext.Provider>
   );
 }
