@@ -1,7 +1,7 @@
 import "./App.css";
 import { Toaster } from "react-hot-toast";
 import { Routes, Route } from "react-router-dom";
-import HotelsProvider from "./components/context/HotelsProvider";
+import HotelsProvider from "./context/HotelsProvider";
 import Header from "./components/Header/Header";
 import LocationList from "./components/LocationList/LocationList";
 import AppLayout from "./components/AppLayout/AppLayout";
