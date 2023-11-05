@@ -1325,94 +1325,49 @@
   ],
   "bookmarks": [
     {
-      "cityName": "Abalessa",
-      "country": "Algeria",
-      "countryCode": "DZ",
-      "latitude": "23.18455079512732",
-      "longitude": "3.795523257510883",
-      "host_location": "Abalessa Algeria",
-      "id": 1
-    },
-    {
-      "cityName": "Mahidasht",
+      "cityName": "Rivash",
       "country": "Iran (Islamic Republic of)",
       "countryCode": "IR",
-      "latitude": "34.32869425037187",
-      "longitude": "46.724183117022086",
-      "host_location": "Mahidasht Iran (Islamic Republic of)",
+      "latitude": "35.429971814905",
+      "longitude": "58.71093750000001",
+      "host_location": "Rivash Iran (Islamic Republic of)",
       "id": 4
     },
     {
-      "cityName": "Sanandaj",
+      "cityName": "Nurabad",
       "country": "Iran (Islamic Republic of)",
       "countryCode": "IR",
-      "latitude": "35.31372444726279",
-      "longitude": "47.03114358752335",
-      "host_location": "Sanandaj Iran (Islamic Republic of)",
+      "latitude": "30.1184253263235",
+      "longitude": "51.67968750000001",
+      "host_location": "Nurabad Iran (Islamic Republic of)",
       "id": 5
     },
     {
-      "cityName": "A Dakhla Oasis",
-      "country": "Egypt",
-      "countryCode": "EG",
-      "latitude": "25.02090651422749",
-      "longitude": "29.09059588509316",
-      "host_location": "A Dakhla Oasis Egypt",
+      "cityName": "Tin Zaouatine",
+      "country": "Algeria",
+      "countryCode": "DZ",
+      "latitude": "20.712471136048553",
+      "longitude": "2.4829101562500004",
+      "host_location": "Tin Zaouatine Algeria",
+      "id": 6
+    },
+    {
+      "cityName": "Fourmies",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "49.99890198000981",
+      "longitude": "4.039535522460938",
+      "host_location": "Fourmies France",
       "id": 7
-    },
-    {
-      "cityName": "Baba Kot",
-      "country": "Pakistan",
-      "countryCode": "PK",
-      "latitude": "28.43528783183169",
-      "longitude": "67.78003711374224",
-      "host_location": "Baba Kot Pakistan",
-      "id": 8
-    },
-    {
-      "cityName": "Sorkheh",
-      "country": "Iran (Islamic Republic of)",
-      "countryCode": "IR",
-      "latitude": "34.72716697747592",
-      "longitude": "52.99804687500001",
-      "host_location": "Sorkheh Iran (Islamic Republic of)",
-      "id": 9
-    },
-    {
-      "cityName": "Malard",
-      "country": "Iran (Islamic Republic of)",
-      "countryCode": "IR",
-      "latitude": "35.691210119390355",
-      "longitude": "50.96557617187501",
-      "host_location": "Malard Iran (Islamic Republic of)",
-      "id": 10
-    },
-    {
-      "cityName": "Tehran",
-      "country": "Iran (Islamic Republic of)",
-      "countryCode": "IR",
-      "latitude": "35.74562060765288",
-      "longitude": "51.48742675781251",
-      "host_location": "Tehran Iran (Islamic Republic of)",
-      "id": 11
     },
     {
       "cityName": "Wignehies",
       "country": "France",
       "countryCode": "FR",
-      "latitude": "50.00870985674894",
-      "longitude": "4.010696411132813",
+      "latitude": "50.00529709930885",
+      "longitude": "4.003658294677735",
       "host_location": "Wignehies France",
-      "id": 12
-    },
-    {
-      "cityName": "Le Nouvion-en-Thierache",
-      "country": "France",
-      "countryCode": "FR",
-      "latitude": "49.98884782754032",
-      "longitude": "3.832168579101563",
-      "host_location": "Le Nouvion-en-Thierache France",
-      "id": 13
+      "id": 8
     }
   ]
 }
