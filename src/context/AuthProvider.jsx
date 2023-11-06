@@ -1,9 +1,14 @@
-import { createContext, useReducer } from "react";
+import { createContext, useContext, useReducer } from "react";
 
 const AuthContext = createContext();
 const initialState = {
   user: null,
   isAuthenticated: false,
+};
+const FAKE_USER = {
+  name: "test name",
+  email: "test@gmail.com",
+  password: 12345678,
 };
 
 const authReducer = (state, { type, payload }) => {
@@ -23,33 +28,29 @@ const authReducer = (state, { type, payload }) => {
   }
 };
 
-const FAKE_USER = {
-  user: "test",
-  email: "test@gmail.com",
-  password: 12345678,
-};
-
-function AuthProvider({ children }) {
+export default function AuthProvider({ children }) {
   const [{ user, isAuthenticated }, dispatch] = useReducer(
     authReducer,
-    initialState,
+    initialState
   );
 
-  function login(email, password) {
+  const login = (email, password) => {
     if (email === FAKE_USER.email && password === FAKE_USER.password) {
       dispatch({ type: "login", payload: FAKE_USER });
     }
-  }
+  };
 
-  function logout() {
+  const logout = () => {
     dispatch({ type: "logout" });
-  }
+  };
 
   return (
-    <AuthContext.provider value={(user, isAuthenticated, login, logout)}>
+    <AuthContext.Provider value={{ user, isAuthenticated, login, logout }}>
       {children}
-    </AuthContext.provider>
+    </AuthContext.Provider>
   );
 }
 
-export default AuthProvider;
+export const useAuth = () => {
+  return useContext(AuthContext);
+};

@@ -1,4 +1,22 @@
+import { useEffect, useState } from "react";
+import { useAuth } from "../../context/AuthProvider.jsx";
+import { useNavigate } from "react-router-dom";
+
 function Login() {
+  const [email, setEmail] = useState("test@gmail.com");
+  const [password, setPassword] = useState(12345678);
+  const { login, isAuthenticated } = useAuth();
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (password && email) login(email, password);
+  };
+
+  useEffect(() => {
+    if (isAuthenticated) navigate("/", { replace: true });
+  }, [isAuthenticated, navigate]);
+
   return (
     <div className="loginContainer">
       <h2>Login</h2>
