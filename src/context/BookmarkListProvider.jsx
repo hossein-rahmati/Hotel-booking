@@ -1,10 +1,4 @@
-import {
-  createContext,
-  useContext,
-  useEffect,
-  useReducer,
-  useState,
-} from "react";
+import { createContext, useContext, useEffect, useReducer } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
 
@@ -41,12 +35,14 @@ const bookmarkReducer = (state, { type, payload }) => {
         ...state,
         isLoading: false,
         bookmarks: [...state.bookmarks, payload],
+        currentBookmark: payload,
       };
     case "bookmarks/deleted":
       return {
         ...state,
         isLoading: false,
         bookmarks: state.bookmarks.filter((item) => item.id !== payload),
+        currentBookmark: null,
       };
     case "rejected":
       return {
@@ -84,6 +80,7 @@ function BookmarkListProvider({ children }) {
   }, []);
 
   async function getBookmark(id) {
+    if (Number(id) === currentBookmark.id) return;
     dispatch({ type: "loading" });
     try {
       const { data } = await axios.get(`${BASE_URL}/bookmarks/${id}`);

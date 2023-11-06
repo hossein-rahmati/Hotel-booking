@@ -1386,6 +1386,15 @@
       "longitude": "13.60759735107422",
       "host_location": "Berlin Germany",
       "id": 10
+    },
+    {
+      "cityName": "La Flamengrie",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "50.01114378958854",
+      "longitude": "3.939285278320313",
+      "host_location": "La Flamengrie France",
+      "id": 11
     }
   ]
 }
