@@ -1368,6 +1368,24 @@
       "longitude": "4.003658294677735",
       "host_location": "Wignehies France",
       "id": 8
+    },
+    {
+      "cityName": "Berlin",
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": "52.451731955536836",
+      "longitude": "13.579101562500002",
+      "host_location": "Berlin Germany",
+      "id": 9
+    },
+    {
+      "cityName": "Berlin",
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": "52.45819900896565",
+      "longitude": "13.60759735107422",
+      "host_location": "Berlin Germany",
+      "id": 10
     }
   ]
 }

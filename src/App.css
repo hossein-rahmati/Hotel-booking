@@ -283,8 +283,12 @@
 .bookmarkList {
   margin-top: 1rem;
 }
+
+.singleBookmark {
+}
+
 .bookmarkItem {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   border: 1px solid var(--text-400);
   border-radius: 1rem;
   padding: 1rem;

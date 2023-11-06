@@ -16,7 +16,7 @@ function SingleBookmark() {
   if (isLoading || !currentBookmark) return <Loader />;
 
   return (
-    <div>
+    <div className="singleBookmark">
       <button onClick={() => navigate(-1)} className="btn btn--back">
         &larr; Back
       </button>
