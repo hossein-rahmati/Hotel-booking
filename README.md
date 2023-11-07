@@ -21,7 +21,7 @@ git clone https://github.com/hossein-rahmati/Hotel-booking.git
 2. Navigate to the project directory:
 
 ```bash
-cd hotel-booking-project
+cd hotel-booking
 ```
 
 3. Install dependencies:
