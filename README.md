@@ -1,4 +1,4 @@
-# Hotel Booking Project with React
+# Hotel Booking Project with React (not completed)
 
 This project is a hotel booking application built using React. It allows users to search for hotels, view hotel details, and make bookings.
 
