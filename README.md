@@ -4,7 +4,7 @@ This project is a hotel booking application built using React. It allows users t
 
 ## Features
 
-- User Registration: Users can log in to a fake account to access additional features such as bookmarks.
+- User Registration: Users can log in to their account to access additional features such as bookmarks.
 - Hotel Search: Users can search for hotels based on location, check-in/check-out dates, number of guests, and number of rooms.
 - Hotel Details: Users can view detailed information about a specific hotel, including name, country, and county.
 - Map Provider: Users can view the location of searched hotels and saved bookmarks.
